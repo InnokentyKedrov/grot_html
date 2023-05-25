@@ -1,0 +1,202 @@
+.footer__container {
+  width: 100%;
+
+  background: url(../assets/icons/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer {
+  width: 1280px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.footer__list {
+  display: flex;
+  width: 1200px;
+  list-style-type: none;
+  margin: 0;
+  padding: 40px 40px 0;
+}
+
+.footer__item:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  margin-right: 158px;
+  padding-top: 17px;
+}
+
+.footer__item_contacts {
+  width: 280px;
+}
+
+.footer__item_locations {
+  width: 302px;
+}
+
+.footer__item_image {
+  width: 300px;
+  height: 310px;
+  background-image: url(../assets/images/footer-puppy.png);
+  background-repeat: no-repeat;
+}
+
+.footer__title {
+  margin: 0;
+
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+
+  color: #FFFFFF;
+}
+
+.footer__data {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+
+  color: #f1cdb3;
+}
+
+.footer__data_mail {
+  padding: 40px 0;
+  padding-left: 60px;
+
+  background-image: url(../assets/icons/icon-email.svg);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.footer__data_tel {
+  padding-left: 60px;
+
+  background-image: url(../assets/icons/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.footer__data_locations_boston {
+  padding: 33px 0;
+  padding-left: 42px;
+  line-height: 23px;
+
+  background-image: url(../assets/icons/pin.svg);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.footer__data_locations_london {
+  padding-left: 42px;
+
+  background-image: url(../assets/icons/pin.svg);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+
+@media (max-width: 1279px) {
+  .footer {
+    width: 768px;
+    height: 639px;
+  }
+  
+  .footer__list {
+    width: 708px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 65px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .footer__list .footer__item {
+    padding-top: 0;
+    margin: 0;
+  }
+  
+  .footer__item:first-child {
+    margin-right: 60px;
+  }
+  
+  .footer__item_contacts {
+    width: 279px;
+    margin-bottom: 65px;
+  }
+  
+  .footer__item_locations {
+    width: 302px;
+    margin-bottom: 65px;
+  }
+  
+  .footer__data_mail {
+    padding-left: 60px;
+  }
+  
+  .footer__data_tel {
+    padding-left: 60px;
+  }
+  
+  .footer__data_locations_boston {
+    padding-left: 42px;
+  }
+  
+  .footer__data_locations_london {
+    padding-left: 42px;
+  }  
+}
+
+@media (max-width: 767px) {
+  .footer {
+    width: 320px;
+    height: 809px;
+    margin: 0 auto;
+  }
+  
+  .footer__list {
+    width: 300px;
+    row-gap: 40px;
+    column-gap: 0;
+  }
+  
+  .footer__list .footer__item {
+    margin: 0;
+  }
+
+  .footer__item_image {
+    width: 260px;
+    height: 269px;
+    background-size: contain;
+  }
+
+  .footer__title {
+    width: 240px;
+    margin: 0 auto;
+
+    text-align: center;
+    font-size: 25px;
+    line-height: 32px;
+  }  
+
+  .footer__data_mail {
+    width: 192px;
+    margin: 0 auto;
+  }
+  
+  .footer__data_tel {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .footer__data_locations_boston {
+    padding: 40px 0;
+    padding-left: 42px;
+  }
+}
