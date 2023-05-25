@@ -1,53 +1,52 @@
 const SLIDER_ARRAY = [
   {
-    "name": "Sophia",
-    "img": "../assets/images/sophia.png"
+    "name": "Сборка компьютеров",
+    "img": "../assets/images/assembly_comp.jpg"
   },
   {
-    "name": "Timmy",
-    "img": "../assets/images/timmy.png"
+    "name": "Продажа расходных материалов",
+    "img": "../assets/images/cartridge.jpg"
   },
   {
-    "name": "Charly",
-    "img": "../assets/images/charly.png"
+    "name": "Монтаж ОПС",
+    "img": "../assets/images/ops.jpg"
   },
   {
-    "name": "Katrine",
-    "img": "../assets/images/katrine.png"   
+    "name": "Проектирование",
+    "img": "../assets/images/project.jpg"   
   },
   {
-    "name": "Jennifer",
-    "img": "../assets/images/jennifer.png"
+    "name": "Ремонт компьютеров",
+    "img": "../assets/images/repair_comp.jpg"
   },
   {
-    "name": "Woody",
-    "img": "../assets/images/woody.png"
+    "name": "Ремонт копировально-множительной техники",
+    "img": "../assets/images/repair_copiers.jpg"
   },
   {
-    "name": "Scarlett",
-    "img": "../assets/images/scarlett.png"
+    "name": "Монтаж СКС",
+    "img": "../assets/images/scs.jpg"
   },
   {
-    "name": "Freddie",
-    "img": "../assets/images/freddie.png",
+    "name": "Продажа офисной техники",
+    "img": "../assets/images/sale.jpg",
   }
 ];
 
 function createCard (index) {
   let card = document.createElement('li');
-  card.classList.add('pets__slider_item');
+  card.classList.add('services__slider_item');
   card.setAttribute('data-name', `${SLIDER_ARRAY[index].name}`)
-  card.innerHTML = `<a class='pets__slider_item_link'>
-                      <img src=${SLIDER_ARRAY[index].img} class='pets__slider_item_image'>
-                      <h4 class='pets__slider_item_name'>${SLIDER_ARRAY[index].name}</h4>
-                      <span class='pets__slider_item_button'>Learn more</span>
-                    </a>`;
-  document.querySelector('.pets__slider_list').appendChild(card);
+  card.innerHTML = `<div class='services__slider_item_link'>
+                      <img src=${SLIDER_ARRAY[index].img} class='services__slider_item_image'>
+                      <h4 class='services__slider_item_name'>${SLIDER_ARRAY[index].name}</h4>
+                    </div>`;
+  document.querySelector('.services__slider_list').appendChild(card);
 }
 
-const LEFTBUTTON = document.querySelector('.pets__slider_left-arrow'),
-      RIGHTBUTTON = document.querySelector('.pets__slider_right-arrow'),
-      CAROUSEL = document.querySelector('.pets__slider_list');
+const LEFTBUTTON = document.querySelector('.services__slider_left-arrow'),
+      RIGHTBUTTON = document.querySelector('.services__slider_right-arrow'),
+      CAROUSEL = document.querySelector('.services__slider_list');
 
 const moveLeft = () => {
   CAROUSEL.classList.add("transition-left");
@@ -82,7 +81,7 @@ showCard(startArray);
 let nextArray = startArray;
 
 CAROUSEL.addEventListener("animationend", (animationEvent) => {
-  let oldCards = document.querySelectorAll('.pets__slider_item');
+  let oldCards = document.querySelectorAll('.services__slider_item');
   for (let i = 0; i < 9; i++) {
     oldCards[i].remove();
   }
@@ -91,15 +90,12 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
   function createArrayLeft () {
     const arr = [0, 1, 2, 3, 4, 5, 6, 7];
     let newArr = arr;
-    console.log(newArr)
     newArr.splice(newArr.indexOf(nextArray[0]), 1);
     newArr.splice(newArr.indexOf(nextArray[1]), 1);
     newArr.splice(newArr.indexOf(nextArray[2]), 1);
-    console.log(newArr)
     let firstEl = newArr[Math.floor(Math.random() * 5)];
     newArr.splice(newArr.indexOf(firstEl), 1);
     newArray.push(firstEl);
-    console.log(newArray)
     for (let i = 1; i < 8; i++) {
       if (i > 2 && i < 6) {
         newArray.push(nextArray[i - 3]);
@@ -110,23 +106,18 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
       }
     }
     newArray.push(firstEl);
-    console.log(nextArray)
-    console.log(newArray)
     nextArray = newArray;
   }
 
   function createArrayRight () {
     const arr = [0, 1, 2, 3, 4, 5, 6, 7];
     let newArr = arr;
-    console.log(newArr)
     newArr.splice(newArr.indexOf(nextArray[6]), 1);
     newArr.splice(newArr.indexOf(nextArray[7]), 1);
     newArr.splice(newArr.indexOf(nextArray[8]), 1);
-    console.log(newArr)
     let firstEl = newArr[Math.floor(Math.random() * 5)];
     newArr.splice(newArr.indexOf(firstEl), 1);
     newArray.push(firstEl);
-    console.log(newArray)
     for (let i = 1; i < 8; i++) {
       if (i > 2 && i < 6) {
         newArray.push(nextArray[i + 3]);
@@ -137,8 +128,6 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
       }
     }
     newArray.push(firstEl);
-    console.log(nextArray)
-    console.log(newArray)
     nextArray = newArray;
   }
 
@@ -147,12 +136,10 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
     CAROUSEL.classList.remove("transition-left");
     createArrayLeft();
     showCard(newArray);
-    currentModal(newArray);
   } else {
     CAROUSEL.classList.remove("transition-right");
     createArrayRight();
     showCard(newArray);
-    currentModal(newArray);
   }
 
 
@@ -178,7 +165,7 @@ else if (document.documentElement.clientWidth < 768) {
   let nextArray = startArray;
   
   CAROUSEL.addEventListener("animationend", (animationEvent) => {
-    let oldCards = document.querySelectorAll('.pets__slider_item');
+    let oldCards = document.querySelectorAll('.services__slider_item');
     for (let i = 0; i < 3; i++) {
       oldCards[i].remove();
     }
@@ -220,12 +207,10 @@ else if (document.documentElement.clientWidth < 768) {
       CAROUSEL.classList.remove("transition-left");
       createArrayLeft();
       showCard(newArray);
-      currentModal(newArray);
     } else {
       CAROUSEL.classList.remove("transition-right");
       createArrayRight();
       showCard(newArray);
-      currentModal(newArray);
     }
   
   
@@ -251,7 +236,7 @@ else {
   let nextArray = startArray;
   
   CAROUSEL.addEventListener("animationend", (animationEvent) => {
-    let oldCards = document.querySelectorAll('.pets__slider_item');
+    let oldCards = document.querySelectorAll('.services__slider_item');
     for (let i = 0; i < 6; i++) {
       oldCards[i].remove();
     }
@@ -295,12 +280,10 @@ else {
       CAROUSEL.classList.remove("transition-left");
       createArrayLeft();
       showCard(newArray);
-      currentModal(newArray);
     } else {
       CAROUSEL.classList.remove("transition-right");
       createArrayRight();
       showCard(newArray);
-      currentModal(newArray);
     }
   
   
