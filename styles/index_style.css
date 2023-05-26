@@ -2,18 +2,16 @@
     width: 100%;
     margin: 0 auto;
   
-    background: url(../assets/icons/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) 
+    background: url(../assets/icons/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   }
   
-  .header__main {
+  .header {
     display: flex;
     justify-content: space-between;
     width: 1200px;
     height: 60px;
-    margin: 0 auto;
-    padding: 60px 0;
-    padding-left: 0px;
-  } 
+    margin: 60px auto;
+  }
   
   .header__burger-menu {
     display: none;
@@ -564,9 +562,6 @@
     letter-spacing: 0.06em;
     text-decoration: none;
   
-    /* background-image: url(../assets/icons/credit-card.svg);
-    background-repeat: no-repeat;
-    background-position: 15px center; */
     background-color: #f1cdb3;
     color: #545454;
     border-radius: 9px;
@@ -591,7 +586,7 @@
   }
   
   @media (max-width: 1279px) {
-    .header__main {
+    .header {
       width: calc(100vw - 60px);
       padding: 0;
       margin: 30px;
@@ -732,13 +727,12 @@
   }
   
   @media (max-width: 767px) {
-    .header__main {
+    .header {
       position: relative;
       justify-content: flex-start;
-      width: calc(96.875%);
+      width: 93.75%;
       margin: 0;
-      padding: 30px 0px;
-      padding-left: 3.125%;
+      padding: 30px 3.125%;
     }
   
     .logo {
@@ -765,7 +759,7 @@
       height: 22px;
       padding: 0;
       margin: auto;
-      margin-right: 20px;
+      margin-right: 0;
   
       background-color: transparent;
       background-image: url(../assets/icons/index-burger.png);
