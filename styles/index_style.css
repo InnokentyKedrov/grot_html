@@ -98,47 +98,47 @@
     transition: 0.3s;
   }
   
-  /* .header__navigation_item_link_current {
-    color: #fafafa;
-    border-bottom: 3px solid #f1cdb3;
-  } */
-  
   .start-screen {
-    background-image: url('../assets/images/office.jpg');
+    background-image: url('../assets/images/office2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .start-screen__wrapper {
+    width: 1280px;
+    margin: 0 auto;
   }
 
   .start-screen__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 1200px;
+    gap: 42px;
+    width: 90%;
     margin: 0 auto;
-    padding: 164px 0;
+    padding: 64px 0 100px;
 
   }
   
   .start-screen__title {
     width: 330px;
     margin: 0;
-    margin-bottom: 42px;
   
     font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
-    line-height: 57.2px;
+    line-height: 56px;
   
     color: #000000;
   }
   
   .start-screen__description {
     margin: 0;
-    margin-bottom: 42px;
 
     font-size: 17px;
-    line-height: 22.1px;
+    line-height: 22px;
+    text-indent: 31px;
+    text-align: justify;
   
     color: #000000;
   }
@@ -177,22 +177,23 @@
   
   .about {
     width: 1280px;
-    height: 408px;
     margin: 100px auto;
     background-image: url(../assets/images/diagram.png);
     background-repeat: no-repeat;
-    background-position: 215px;
+    background-position: 100px;
   }
   
   .about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     padding-top: 14px;
     padding-left: 634px;
-    width: 430px;
+    width: 600px;
   }
   
   .about__title {
     margin: 0;
-    margin-bottom: 25px;
   
     font-family: 'Georgia';
     font-style: normal;
@@ -204,10 +205,8 @@
   
   .about__description {
     margin: 0;
-  }
-  
-  .about__description_first {
-    margin-bottom: 25px;
+    text-indent: 32px;
+    text-align: justify;
   }
   
   .services__container {
@@ -344,6 +343,7 @@
   }
   
   .services__slider_item_name {
+    height: 50px;
     margin: 0;
     margin-bottom: 30px;
   
@@ -351,7 +351,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 22.72px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.06em;
   
@@ -512,9 +512,8 @@
   .in-addition__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 24px;;
     width: 380px;
-    height: 282px;
     padding-top: 80px;
     padding-left: 716px;
     padding-bottom: 100px;
@@ -592,30 +591,26 @@
   }
   
   @media (max-width: 1279px) {
-    /* .container {
-      width: 100%;
-      height: 1165px;
-    } */
-  
     .header__main {
       width: calc(100vw - 60px);
       padding: 0;
       margin: 30px;
     }
   
+    .start-screen__wrapper {
+      width: 768px;
+    }
+
     .start-screen__container {
-      width: 70%;
       padding: 0;
     }
 
     .start-screen__title {
       padding-top: 30px;
+
+      font-size: 32px;
+      line-height: 40px;
     }
-    
-    /* .start-screen__description {
-      margin: 0 auto;
-      margin-bottom: 42px;
-    } */
     
     .start-screen_link {
       margin: 0 auto;
@@ -631,14 +626,19 @@
     
     .about {
       width: 768px;
-      height: 868px;
+      padding-bottom: 290px;
       
       background-position: bottom center;
     }
     
     .about__container {
+      width: 90%;
       padding: 0;
       margin: 0 auto;
+    }
+
+    .about__title {
+      text-align: center;
     }
     
     .services {
@@ -706,27 +706,23 @@
     .in-addition__wrapper {
       justify-content: flex-start;
       width: 505px;
-      height: 603px;
-      padding: 80px 0 100px;
+      padding: 80px 0 480px;
       margin: 0 auto;
     
-      background-position: center 350px;
+      background-position: center 360px;
     }
     
     .in-addition__title {
       width: 380px;
       margin: 0 auto;
-      margin-bottom: 20px;
     }
     
     .in-addition__bank {
       margin-left: 62.5px;
-      margin-bottom: 20px;
     }
     
     .in-addition__bank_link {
       margin-left: 62.5px;
-      margin-bottom: 20px;
     }
     
     .in-addition__info {
@@ -736,11 +732,6 @@
   }
   
   @media (max-width: 767px) {
-    /* .container {
-      height: 823px;
-      margin-bottom: 42px;
-    } */
-    
     .header__main {
       position: relative;
       justify-content: flex-start;
@@ -774,7 +765,7 @@
       height: 22px;
       padding: 0;
       margin: auto;
-      margin-right: 53px;
+      margin-right: 20px;
   
       background-color: transparent;
       background-image: url(../assets/icons/index-burger.png);
@@ -832,14 +823,17 @@
       line-height: 160%;
     }
 
+    .start-screen__wrapper {
+      width: 320px;
+    }
+
     .start-screen__container {
-      width: 90%;
+      gap: 10px;
     }
   
     .start-screen__title {
       width: 100%;
       margin: 0 auto;
-      margin-bottom: 42px;
       padding: 0;
       padding-top: 30px;
   
@@ -847,10 +841,6 @@
       font-size: 25px;
       line-height: 32px;
       letter-spacing: 0.06em;
-    }
-    
-    .start-screen__description {
-      text-align: center;
     }
     
     .start-screen_link {
@@ -865,30 +855,13 @@
   
     .about {
       width: 320px;
-      height: 890px;
       margin: 42px auto;
-  
-      background-size: 260px 353.6px;
-    }
-    
-    .about__container {
-      width: 270px;
     }
   
     .about__title {
-      margin-bottom: 25px;
-    
       text-align: center;
       font-size: 25px;
       line-height: 32px;
-    }
-    
-    .about__description {
-      text-align: justify;
-    }
-    
-    .about__description_first {
-      margin-bottom: 22px;
     }
     
     .services {
@@ -983,18 +956,18 @@
     
     .in-addition__wrapper {
       justify-content: flex-start;
+      gap: 10px;
       width: 300px;
       height: 500px;
       padding: 20px 0;
       margin: 0 auto;
     
-      background-position: center 285px;
+      background-position: center 260px;
       background-size: contain;
     }
     
     .in-addition__title {
       width: 300px;
-      margin-bottom: 20px;
   
       text-align: center;
       font-size: 25px;
@@ -1003,7 +976,6 @@
     
     .in-addition__bank {
       margin: 0;
-      margin-bottom: 20px;
   
       text-align: center;
       line-height: 24px;
@@ -1015,7 +987,6 @@
       height: 43px;
       padding: 14px 14px 9px 60px;
       margin: 0 auto;
-      margin-bottom: 20px;
   
       font-size: 15px;
       line-height: 17px;
