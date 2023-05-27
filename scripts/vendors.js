@@ -643,14 +643,11 @@ const vendors = [
 const vendorsList = document.querySelector('.vendors__list');
 
 function createItem (el) {
-    console.log('el: ', el);
-    let item = document.createElement('li');
-    console.log('item: ', item);
-    item.classList.add('vendors_item');
-    item.style.backgroundImage = el;
-    // item.setAttribute('data-name', `${vendors[index].name}`)
-    item.innerHTML = `<img class='vendors__item_image' src=${el}>`;
-    document.querySelector('.vendors__list').appendChild(item);
-  }
+  let item = document.createElement('li');
+  item.classList.add('vendors_item');
+  item.style.backgroundImage = el;
+  item.innerHTML = `<img class='vendors__item_image' src=${el} alt='Название вендора'>`;
+  document.querySelector('.vendors__list').appendChild(item);
+}
 
-  vendors.map(el => createItem(el));
+vendors.map(el => createItem(el));
