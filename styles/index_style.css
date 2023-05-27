@@ -404,14 +404,14 @@
     background-color: #fddcc4;
   }
   
-  .help {
+  .vendors {
     width: 1280px;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 100px;
   }
   
-  .help__title {
+  .vendors__title {
     width: 310px;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -427,18 +427,36 @@
     color: #545454;
   }
   
-  .help__list {
+  .vendors__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     column-gap: 120px;
     row-gap: 55px;
     list-style-type: none;
     margin: 0;
-    padding: 0 125px;
+    padding: 0 20px;
+  }
+
+  .vendors__item {
+    display: block;
+    box-sizing: border-box;
+    width: 120px;
+    height: 113px;
+    padding-top: 90px;
+    min-width: 60px;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .vendors__item_image {
+    width: 120px;
   }
   
-  .help__item_title {
+  /* .vendors__item_title {
     display: block;
     box-sizing: border-box;
     height: 113px;
@@ -458,56 +476,20 @@
     background-position: center;
     background-size: contain;
     color: #545454;
-  }
-  
-  .help__item_title_xerox {
-    background-image: url(../assets/icons/xerox.png);
-  }
-  
-  .help__item_title_hp {
-    background-image: url(../assets/icons/hp.png);
-  }
-  
-  .help__item_title_canon {
-    background-image: url(../assets/icons/canon.png);
-  }
-  
-  .help__item_title_samsung {
-    background-image: url(../assets/icons/samsung.png);
-  }
-  
-  .help__item_title_intel {
-    background-image: url(../assets/icons/intel.png);
-  }
-  
-  .help__item_title_amd {
-    background-image: url(../assets/icons/amd.png);
-  }
-  
-  .help__item_title_cisco {
-    background-image: url(../assets/icons/cisco.png);
-  }
-  
-  .help__item_title_ltv {
-    background-image: url(../assets/icons/ltv.png);
-  }
-  
-  .help__item_title_bolid {
-    background-image: url(../assets/icons/bolid.png);
-  }
-  
-  .in-addition__container {
+  } */
+    
+  .vacancies__container {
     width: 100%;
   
     background-color: #f6f6f6;
   }
   
-  .in-addition {
+  .vacancies {
     width: 1280px;
     margin: 0 auto;
   }
   
-  .in-addition__wrapper {
+  .vacancies__wrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;;
@@ -522,7 +504,7 @@
     background-size: contain;
   }
   
-  .in-addition__title {
+  .vacancies__title {
     margin: 0;
   
     font-family: 'Georgia', serif;
@@ -535,7 +517,7 @@
     color: #545454;
   }
   
-  .in-addition__bank {
+  .vacancies__bank {
     display: block;
   
     font-family: 'Georgia', serif;
@@ -548,7 +530,7 @@
     color: #545454;
   }
   
-  .in-addition__bank_link {
+  .vacancies__bank_link {
     box-sizing: border-box;
     width: 349px;
     height: 43px;
@@ -567,13 +549,13 @@
     border-radius: 9px;
   }
   
-  .in-addition__bank_link:hover {
+  .vacancies__bank_link:hover {
     background-color: #fddcc4;
   
     cursor: pointer;
   }
   
-  .in-addition__info {
+  .vacancies__info {
     margin: 0;
   
     font-family: 'Arial', sans-serif;
@@ -677,28 +659,21 @@
       margin: 0;
     }
     
-    .help {
+    .vendors {
       width: 100%;
     }
     
-    .help__list {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(170px, 1fr));
-      column-gap: 9.8%;
-      padding: 0 70px;
-    }
-  
-    .help__item {
-      width: 170px;
-      margin: 0 auto;
+    .vendors__list {
+      column-gap: 10%;
+      row-gap: 30px;
     }
     
-    .in-addition {
+    .vacancies {
       width: 768px;
       height: 100%;
     }
     
-    .in-addition__wrapper {
+    .vacancies__wrapper {
       justify-content: flex-start;
       width: 505px;
       padding: 80px 0 480px;
@@ -707,20 +682,20 @@
       background-position: center 360px;
     }
     
-    .in-addition__title {
+    .vacancies__title {
       width: 380px;
       margin: 0 auto;
     }
     
-    .in-addition__bank {
+    .vacancies__bank {
       margin-left: 62.5px;
     }
     
-    .in-addition__bank_link {
+    .vacancies__bank_link {
       margin-left: 62.5px;
     }
     
-    .in-addition__info {
+    .vacancies__info {
       width: 380px;
       margin: 0 auto;
     }
@@ -914,41 +889,31 @@
       animation-duration: 1s;
     }
     
-    .help {
+    .vendors {
       padding: 42px 0;
       margin: 0 auto;
     }
   
-    .help__title {
+    .vendors__title {
       font-size: 25px;
       line-height: 32px;
       margin-bottom: 42px;
     }
-    
-    .help__list {
-      grid-template-columns: repeat(2, minmax(130px, 1fr));
-      row-gap: 30px;
-      padding: 0 15px;
-    }
   
-    .help__item {
-      width: 130px;
-    }
-  
-    .help__item_title {
+    /* .vendors__item_title {
       height: 87px;
       padding-top: 70px;
       min-width: 50px;
     
       font-size: 15px;
       line-height: 17px;
-    }
+    } */
   
-    .in-addition {
+    .vacancies {
       width: 320px;
     }
     
-    .in-addition__wrapper {
+    .vacancies__wrapper {
       justify-content: flex-start;
       gap: 10px;
       width: 300px;
@@ -960,7 +925,7 @@
       background-size: contain;
     }
     
-    .in-addition__title {
+    .vacancies__title {
       width: 300px;
   
       text-align: center;
@@ -968,7 +933,7 @@
       line-height: 32px;
     }
     
-    .in-addition__bank {
+    .vacancies__bank {
       margin: 0;
   
       text-align: center;
@@ -976,7 +941,7 @@
       letter-spacing: normal;
     }
     
-    .in-addition__bank_link {
+    .vacancies__bank_link {
       width: 281px;
       height: 43px;
       padding: 14px 14px 9px 60px;
@@ -986,7 +951,7 @@
       line-height: 17px;
     }
     
-    .in-addition__info {
+    .vacancies__info {
       width: 280px;
       margin: 0 auto;
   
