@@ -54,7 +54,8 @@ body {
   font-weight: 400;
   color: #4c4c4c;
 
-  background-color: #ffffff;  
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .lock {
