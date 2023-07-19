@@ -3,7 +3,8 @@
   width: 100%;
   margin: 0 auto;
 
-  background: url(../assets/icons/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  background: url(../assets/icons/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
 
   z-index: 1;
 }
@@ -35,7 +36,7 @@
   margin: 0;
   margin-bottom: 10px;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -46,7 +47,7 @@
 }
 
 .logo__item_description {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -97,14 +98,14 @@
 .header__navigation_item_link:active {
   color: #fafafa;
   border-bottom: 3px solid #f1cdb3;
-  
+
   transition: 0.3s;
 }
 
 /* -----START-SCREEN----- */
 
 .start-screen {
-  background-image: url('../assets/images/office2.jpg');
+  background-image: url("../assets/images/office2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 180px;
@@ -122,14 +123,13 @@
   width: 90%;
   margin: 0 auto;
   padding: 64px 0 100px;
-
 }
 
 .start-screen__title {
   width: 330px;
   margin: 0;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 44px;
@@ -154,12 +154,12 @@
   box-sizing: border-box;
   text-align: center;
   align-self: flex-end;
-  
+
   width: 207px;
   height: 52px;
   padding: 15px 44px;
 
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -206,7 +206,7 @@
 .about__title {
   margin: 0;
 
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -217,7 +217,10 @@
 .about__description {
   margin: 0;
   text-indent: 32px;
-  text-align: justify;
+}
+
+.about__description_list li {
+  margin-top: 10px;
 }
 
 /* -----SERVICES----- */
@@ -241,13 +244,13 @@
   padding-top: 80px;
   padding-bottom: 60px;
 
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 45.5px;
   letter-spacing: 0.06em;
-  
+
   text-align: center;
 }
 
@@ -273,12 +276,12 @@
 }
 
 .services__slider_arrow:hover {
-  border-color:  #fddcc4;
+  border-color: #fddcc4;
   background-color: #fddcc4;
 }
 
 .services__slider_arrow:disabled {
-  border-color:  #cdcdcd;
+  border-color: #cdcdcd;
   fill: #cdcdcd;
 }
 
@@ -309,8 +312,12 @@
 }
 
 @keyframes move-right {
-  from {left: -1080px;}
-  to {left: -2160px;}
+  from {
+    left: -1080px;
+  }
+  to {
+    left: -2160px;
+  }
 }
 
 .transition-right {
@@ -319,8 +326,12 @@
 }
 
 @keyframes move-left {
-  from {left: -1080px;}
-  to {left: 0px;}
+  from {
+    left: -1080px;
+  }
+  to {
+    left: 0px;
+  }
 }
 
 .transition-left {
@@ -361,7 +372,7 @@
   margin: 0;
   margin-bottom: 30px;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -377,7 +388,7 @@
   margin: 0 auto;
   margin-bottom: 30px;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -402,7 +413,7 @@
   margin: 0 auto;
   padding: 15px 44px;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -434,7 +445,7 @@
   margin: 0 auto;
   margin-bottom: 60px;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -497,7 +508,7 @@
 } */
 
 /* -----VACANCIES----- */
-  
+
 .vacancies__container {
   width: 100%;
   scroll-margin-top: 180px;
@@ -513,7 +524,7 @@
 .vacancies__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;;
+  gap: 24px;
   width: 380px;
   padding-top: 80px;
   padding-left: 716px;
@@ -528,7 +539,7 @@
 .vacancies__title {
   margin: 0;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -541,7 +552,7 @@
 .vacancies__bank {
   display: block;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -557,7 +568,7 @@
   height: 43px;
   padding: 10px 14px 10px 60px;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -579,13 +590,13 @@
 .vacancies__info {
   margin: 0;
 
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
 
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
 /* -----FOOTER----- */
@@ -593,8 +604,10 @@
 .footer__container {
   width: 100%;
   scroll-margin-top: 180px;
-  
-  background: url(../assets/icons/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+
+  background: url(../assets/icons/noise_transparent@2x.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
 }
 
 .footer {
@@ -636,18 +649,18 @@
 .footer__title {
   margin: 0;
 
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 45px;
   letter-spacing: 0.06em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__data {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -693,7 +706,6 @@
   background-position: 0 center;
 }
 
-
 @media (max-width: 1279px) {
   .header {
     width: calc(100vw - 60px);
@@ -721,12 +733,12 @@
     font-size: 32px;
     line-height: 40px;
   }
-  
+
   .start-screen_link {
     margin: 0 auto;
-    margin-bottom: 100px;  
+    margin-bottom: 100px;
   }
-  
+
   .start-screen__image {
     align-self: flex-end;
 
@@ -741,10 +753,10 @@
     padding-top: 42px;
     padding-bottom: 290px;
     scroll-margin-top: 120px;
-    
+
     background-position: bottom center;
   }
-  
+
   .about__container {
     width: 90%;
     padding: 0;
@@ -754,7 +766,7 @@
   .about__title {
     text-align: center;
   }
-  
+
   /* --------------- */
 
   .services__container {
@@ -764,11 +776,11 @@
   .services {
     width: 768px;
   }
-  
+
   .services__slider_left-arrow {
     margin-left: 30px;
   }
-  
+
   .services__slider_right-arrow {
     margin-right: 30px;
   }
@@ -776,7 +788,7 @@
   .services__slider_wrapper {
     width: 580px;
   }
-  
+
   .services__slider_list {
     width: 580px;
     left: -620px;
@@ -784,69 +796,77 @@
   }
 
   @keyframes move-right {
-    from {left: -620px;}
-    to {left: -1240px;}
+    from {
+      left: -620px;
+    }
+    to {
+      left: -1240px;
+    }
   }
-  
+
   @keyframes move-left {
-    from {left: -620px;}
-    to {left: 0px;}
+    from {
+      left: -620px;
+    }
+    to {
+      left: 0px;
+    }
   }
 
   .transition-right,
   .transition-left {
     animation-duration: 2s;
   }
-  
+
   .services__slider_item {
     margin: 0;
   }
 
   /* --------------- */
-  
+
   .vendors {
     width: 100%;
     scroll-margin-top: 120px;
   }
-  
+
   .vendors__list {
     column-gap: 10%;
     row-gap: 30px;
   }
-  
+
   /* --------------- */
 
   .vacancies__container {
-    scroll-margin-top: 120px
+    scroll-margin-top: 120px;
   }
 
   .vacancies {
     width: 768px;
     height: 100%;
   }
-  
+
   .vacancies__wrapper {
     justify-content: flex-start;
     width: 505px;
     padding: 80px 0 480px;
     margin: 0 auto;
-  
+
     background-position: center 360px;
   }
-  
+
   .vacancies__title {
     width: 380px;
     margin: 0 auto;
   }
-  
+
   .vacancies__bank {
     margin-left: 62.5px;
   }
-  
+
   .vacancies__bank_link {
     margin-left: 62.5px;
   }
-  
+
   .vacancies__info {
     width: 380px;
     margin: 0 auto;
@@ -855,14 +875,14 @@
   /* --------------- */
 
   .footer__container {
-    scroll-margin-top: 120px
+    scroll-margin-top: 120px;
   }
 
   .footer {
     width: 768px;
     height: 639px;
   }
-  
+
   .footer__list {
     width: 708px;
     flex-wrap: wrap;
@@ -877,37 +897,36 @@
     padding-top: 0;
     margin: 0;
   }
-  
+
   .footer__item:first-child {
     margin-right: 60px;
   }
-  
+
   .footer__item_contacts {
     width: 279px;
     margin-bottom: 65px;
   }
-  
+
   .footer__item_locations {
     width: 302px;
     margin-bottom: 65px;
   }
-  
+
   .footer__data_mail {
     padding-left: 60px;
   }
-  
+
   .footer__data_tel {
     padding-left: 60px;
   }
-  
+
   .footer__data_locations_boston {
     padding-left: 42px;
   }
-  
+
   .footer__data_locations_london {
     padding-left: 42px;
-  }  
-
+  }
 }
 
 @media (max-width: 767px) {
@@ -963,7 +982,7 @@
   .header__navigation {
     position: fixed;
     width: 320px;
-    height: 100%;  
+    height: 100%;
     top: 0;
     right: -320px;
 
@@ -971,20 +990,20 @@
     transition: right 600ms ease 0s;
     z-index: 1;
   }
-  
+
   .header__navigation_active {
     right: 0;
   }
 
   .header__navigation_list {
     width: 243px;
-    height: 100%;  
+    height: 100%;
     justify-content: center;
     flex-direction: column;
     margin: auto;
     align-items: center;
   }
-  
+
   .header__navigation_item {
     margin: 0;
   }
@@ -993,7 +1012,7 @@
     margin-right: 0;
     margin-bottom: 40px;
   }
-  
+
   .header__navigation_item_link {
     padding-bottom: 7px;
 
@@ -1022,11 +1041,11 @@
     line-height: 32px;
     letter-spacing: 0.06em;
   }
-  
+
   .start-screen_link {
-    margin-bottom: 105px;  
+    margin-bottom: 105px;
   }
-  
+
   .start-screen__image {
     width: 260px;
     height: 272px;
@@ -1045,7 +1064,7 @@
     font-size: 25px;
     line-height: 32px;
   }
-  
+
   /* --------------- */
 
   .services {
@@ -1056,7 +1075,7 @@
     width: 300px;
     margin: 0 auto;
     padding: 42px 0;
-    
+
     text-align: center;
     font-size: 25px;
     line-height: 32px;
@@ -1070,7 +1089,7 @@
     width: 270px;
     order: -1;
   }
-    
+
   .services__slider_list {
     width: 270px;
     left: -270px;
@@ -1090,13 +1109,21 @@
   }
 
   @keyframes move-right {
-    from {left: -270px;}
-    to {left: -540px;}
+    from {
+      left: -270px;
+    }
+    to {
+      left: -540px;
+    }
   }
-  
+
   @keyframes move-left {
-    from {left: -270px;}
-    to {left: 0px;}
+    from {
+      left: -270px;
+    }
+    to {
+      left: 0px;
+    }
   }
 
   .transition-right,
@@ -1105,7 +1132,7 @@
   }
 
   /* --------------- */
-  
+
   .vendors {
     padding: 42px 0;
     margin: 0 auto;
@@ -1131,7 +1158,7 @@
   .vacancies {
     width: 320px;
   }
-  
+
   .vacancies__wrapper {
     justify-content: flex-start;
     gap: 10px;
@@ -1139,11 +1166,11 @@
     height: 500px;
     padding: 42px 0 30px;
     margin: 0 auto;
-  
+
     background-position: center 260px;
     background-size: contain;
   }
-  
+
   .vacancies__title {
     width: 300px;
 
@@ -1151,7 +1178,7 @@
     font-size: 25px;
     line-height: 32px;
   }
-  
+
   .vacancies__bank {
     margin: 0;
 
@@ -1159,7 +1186,7 @@
     line-height: 24px;
     letter-spacing: normal;
   }
-  
+
   .vacancies__bank_link {
     width: 281px;
     height: 43px;
@@ -1169,7 +1196,7 @@
     font-size: 15px;
     line-height: 17px;
   }
-  
+
   .vacancies__info {
     width: 280px;
     margin: 0 auto;
@@ -1184,13 +1211,13 @@
     height: 809px;
     margin: 0 auto;
   }
-  
+
   .footer__list {
     width: 300px;
     row-gap: 40px;
     column-gap: 0;
   }
-  
+
   .footer__list .footer__item {
     margin: 0;
   }
@@ -1208,13 +1235,13 @@
     text-align: center;
     font-size: 25px;
     line-height: 32px;
-  }  
+  }
 
   .footer__data_mail {
     width: 192px;
     margin: 0 auto;
   }
-  
+
   .footer__data_tel {
     width: 180px;
     margin: 0 auto;

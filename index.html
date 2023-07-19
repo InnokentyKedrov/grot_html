@@ -1,168 +1,361 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ООО «Грот НН»</title>
-  <link rel="icon" href="./assets/icons/favicon.png">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/common_styles.css">
-  <link rel="stylesheet" href="./styles/index_style.css">
-  <script src="./scripts/burger.js" defer></script>
-  <script src="./scripts/slider.js" defer></script>
-  <script src="./scripts/vendors.js" defer></script>
-</head>
-<body class="open">
-  <div class="container">
-    <header class="header">
-      <h1 class="visually-hidden">Сайт ООО Грот НН</h1>
-      <div class="blackout"></div>
-      <a class="logo">
-        <span class="logo__item logo__item_title">ООО Грот НН</span>
-        <span class="logo__item logo__item_description">Мы за комплексный подход</span>
-      </a>
-      <button class="burger-btn" type="button" id="burger"></button>
-      <nav class="header__navigation">
-        <ul class="header__navigation_list">
-          <li class="header__navigation_item">
-            <a href="#about" class="header__navigation_item_link header__navigation_item_link_current">
-              О компании
-            </a>
-          </li>
-          <li class="header__navigation_item">
-            <a href="#services" class="header__navigation_item_link">
-              Услуги
-            </a>
-          </li>
-          <li class="header__navigation_item">
-            <a href="#vendors" class="header__navigation_item_link">
-              Вендоры
-            </a>
-          </li>
-          <li class="header__navigation_item">
-            <a href="#vacancies" class="header__navigation_item_link">
-              Вакансии
-            </a>
-          </li>
-          <li class="header__navigation_item">
-            <a href="#footer" class="header__navigation_item_link">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-
-  <main>
-    <section class="start-screen">
-      <div class="start-screen__wrapper">
-        <div class="start-screen__container">
-        <h2 class="start-screen__title">Динамично развивающаяся компания</h2>
-        <p class="start-screen__description">
-          Вы всегда можете рассчитывать на профессиональный подход и гарантию качества проведенных работ. Наши специалисты быстро и качественно помогут Вам решить проблемы в работе с офисной техникой, сетевым оборудованием, программным обеспечением, подключением к сети.
-        </p>
-        <a href="#footer" class="start-screen_link">Контакты</a>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ООО «Грот НН»</title>
+    <link rel="icon" href="./assets/icons/favicon.png" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/common_styles.css" />
+    <link rel="stylesheet" href="./styles/index_style.css" />
+    <script src="./scripts/burger.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/vendors.js" defer></script>
+  </head>
+  <body class="open">
+    <div class="container">
+      <header class="header">
+        <h1 class="visually-hidden">Сайт ООО Грот НН</h1>
+        <div class="blackout"></div>
+        <a class="logo">
+          <span class="logo__item logo__item_title">ООО Грот НН</span>
+          <span class="logo__item logo__item_description"
+            >Мы за комплексный подход</span
+          >
+        </a>
+        <button class="burger-btn" type="button" id="burger"></button>
+        <nav class="header__navigation">
+          <ul class="header__navigation_list">
+            <li class="header__navigation_item">
+              <a
+                href="#about"
+                class="header__navigation_item_link header__navigation_item_link_current"
+              >
+                О компании
+              </a>
+            </li>
+            <li class="header__navigation_item">
+              <a href="#services" class="header__navigation_item_link">
+                Услуги
+              </a>
+            </li>
+            <li class="header__navigation_item">
+              <a href="#vendors" class="header__navigation_item_link">
+                Вендоры
+              </a>
+            </li>
+            <li class="header__navigation_item">
+              <a href="#vacancies" class="header__navigation_item_link">
+                Вакансии
+              </a>
+            </li>
+            <li class="header__navigation_item">
+              <a href="#footer" class="header__navigation_item_link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
-  </section>
 
-    <section class="about" id="about">
-      <div class="about__container">
-        <h3 class="about__title">
-          О нашей компании
-        </h3>
-        <p class="about__description">
-          Наша компания c 2002 года уверено занимает свою нишу на рынке современных технологий. Специалисты нашей компании обладают богатым опытом и сертификатами в области внедрения и комплексного обслуживания информационных систем, поставок и обслуживания оргтехники и оборудования для типографий, ремонта цифровой техники.
-        </p>
-        <p class="about__description">
-          За время работы нашими клиентами стали такие известные предприятия и структуры, как Волго-вятский банк Сбербанка России, ОАО РЖД, Министерство обороны РФ, ОАО "Волганефтепродукт", ОАО "Торговый дом "Красный якорь", Управление делами Губернатора Нижегородской области, ООО "Волговятская строительная компания".
-        </p>
-        <p class="about__description">
-          Сотрудничая с нами, Вы создаете корпоративную информационную среду, которая всегда будет соответствовать последним техническим решениям, проверенным и отлаженным нашими специалистами.
-        </p>
-        <p class="about__description">
-          Компания «Грот НН» предлагает широкий спектр продукции мировых брендов: Xerox, HP, Cisco, Fluke, APC и многих других. Все услуги наших сервисных специалистов сертифицированы государственными органами и компаниями-производителями.
-        </p>
-        <p class="about__description">
-          Мы достигли значительных успехов в развитии направления системной интеграции, что позволяет предложить нашим клиентам такие услуги как: создание сетей передачи данных, структурированных кабельных систем, систем телефонной связи и других слаботочных сетей (разрешение на данный вид работ подтверждается лицензией на осуществление Строительства зданий и сооружений I и II уровней ответственности).
-        </p>
-        <p class="about__description">
-          Компания «Грот НН» активно работает не только на территории Нижегородской области, но и за ее пределами. Специализация на работе с крупными корпоративными заказчиками и наличие сервисных центров в таких городах, как Казань, Киров, Ижевск позволяет наиболее оперативно реагировать на потребности наших клиентов.
-        </p>
-        <p class="about__description">
-          Наша компания готова осуществлять оптовые и мелкооптовые поставки своей продукции по всей территории РФ любым видом транспорта. В Нижнем Новгороде и области для наших клиентов действует система бесплатной доставки.
-        </p>
-      </div>
-    </section>
-
-    <div class="services__container" id="services">
-      <section class="services">
-        <h3 class="services__title">
-          Чем мы занимаемся
-        </h3>
-        <div class="services__slider">
-          <button class="services__slider_arrow services__slider_left-arrow" type="button">
-            <svg width="15" height="9" viewBox="0 0 14 6" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 2V4H3V6L0 3L3 0V2H14Z"/>
-            </svg>
-          </button>
-          <div class="services__slider_wrapper">
-            <ul class="services__slider_list">
-            </ul>
+    <main>
+      <section class="start-screen">
+        <div class="start-screen__wrapper">
+          <div class="start-screen__container">
+            <h2 class="start-screen__title">
+              Динамично развивающаяся компания
+            </h2>
+            <p class="start-screen__description">
+              Вы всегда можете рассчитывать на профессиональный подход и
+              гарантию качества проведенных работ. Наши специалисты быстро и
+              качественно помогут Вам решить проблемы в работе с офисной
+              техникой, сетевым оборудованием, программным обеспечением,
+              подключением к сети.
+            </p>
+            <a href="#footer" class="start-screen_link">Контакты</a>
           </div>
-          <button class="services__slider_arrow services__slider_right-arrow" type="button">
-            <svg width="15" height="12" viewBox="0 0 14 6" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 2V4H3V6L0 3L3 0V2H14Z"/>
-            </svg>
-          </button>
         </div>
-        <!-- <a href="services.html" class="services__more_link">Get to know the rest</a> -->
       </section>
-    </div>
 
-    <section class="vendors" id="vendors">
-      <h3 class="vendors__title">
-        Наши партнеры
-      </h3>
-      <ul class="vendors__list"></ul>
-    </section>
-
-    <div class="vacancies__container" id="vacancies">
-      <section class="vacancies">
-        <div class="vacancies__wrapper">
-          <h3 class="vacancies__title">
-            Вакансии компании
-          </h3>
-          <span class="vacancies__bank">Менеджер / Manager</span>
-          <a class="vacancies__bank_link">Зарплата сдельная</a>
-          <p class="vacancies__info">
-            Legal information and lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim 
-            sed ac diam. Praesent ultrices maximus tortor et vulputate. 
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      <section class="about" id="about">
+        <div class="about__container">
+          <h3 class="about__title">О нашей компании</h3>
+          <p class="about__description">
+            Наше предприятие более 20 лет занимается системной интеграцией,
+            комплексной автоматизацией предприятий, поставками компьютерной
+            техники, расходных материалов и лицензионного программного
+            обеспечения в ведущие муниципальные и коммерческие организации
+            Приволжского Федерального Округа и ряда регионов Российской
+            Федерации.
           </p>
+          <p class="about__description">
+            За это время наша фирма зарекомендовала себя как надежный и
+            добросовестный поставщик, способный в кратчайшие сроки полностью
+            обеспечить потребности предприятия в вычислительных системах любого
+            уровня сложности, в оргтехнике самого широкого спектра, а также в
+            расходных материалах и сопутствующих запасных частях, выполнить
+            проект автоматизации предприятия любого уровня сложности.
+          </p>
+          <ul class="about__description_list">
+            Квалификацию качества нашей работы подтверждают многочисленные
+            сертификаты производителей вычислительной, серверной и печатающей
+            техники, в том числе:
+            <li>
+              по серверному оборудованию Гравитон, в т.ч. из реестра МПТ:
+              Авторизованный партнер
+            </li>
+            <li>
+              по серверному оборудованию Rikor, в т.ч. из реестра МПТ:
+              Авторизованный партнер
+            </li>
+            <li>по серверам, компьютерам NL: Авторизованный партнер</li>
+            <li>
+              по серверам, компьютерам, ноутбукам, СХД Nerpa: Авторизованный
+              партнер
+            </li>
+            <li>по ноутбукам, мониторам Hiper: : Авторизованный партнер</li>
+          </ul>
+
+          <ol class="about__description_list">
+            Разрешите коротко выделить основные направления деятельности нашего
+            предприятия:
+            <li>
+              Как системный интегратор мы предлагаем автоматизацию управления
+              документооборотом на предприятиях любого размера.
+              <p class="about__description">
+                Для этого мы готовы предложить весь комплекс решений от
+                модернизации парка печатающей техники до рабочего проекта и
+                создания Корпоративной Информационной Системы под ключ,
+                включающей в себя:
+              </p>
+
+              <ul class="about__description_list">
+                <li>
+                  серверное и компьютерное иностранного производства, в том
+                  числе, таких вендоров как Huawei, Dell, HPE, Fujitsu, Lenovo;
+                </li>
+                <li>
+                  серверное и компьютерное оборудование российского производства
+                  в том числе, таких вендоров как NERPA, Qtech, Utinet, NL,
+                  Inferit реестровые российские сервера (МПТ) Гравитон, Rikor,
+                  Aquarius, Depo, IRU;
+                </li>
+                <li>
+                  системы хранения данных иностранного производства DELL,
+                  Huawei, EMC, Fujitsu, HPE;
+                </li>
+                <li>
+                  системы хранения данных российского производства Aquarius,
+                  Inferit, Qtech;
+                </li>
+                <li>
+                  программное обеспечение Microsoft, Dr.Web, Касперский, Астра
+                  Линукс;
+                </li>
+                <li>
+                  системы бесперебойного питания APC, ZIS, POWERWARE,
+                  N-Power,Eaton, Ippon;
+                </li>
+                <li>
+                  территориально распределенную СКС с применением самых
+                  современных стандартов передачи данных и поддержку всей
+                  имеющейся инфраструктуры на базе кабельных систем Legrand,
+                  Exalan, AMP;
+                </li>
+                <li>
+                  активное оборудование(в том числе оборудование ядра сети)
+                  Cisco Systems, HP, D-link, Avaya, Allied Telesys, Zyxel,
+                  Qtech, Tp-link, Ubiquiti;
+                </li>
+                <li>пассивное оборудование Rittal, AMP, Knurr, Zpas;</li>
+                <li>
+                  прочее оборудование ЦОДов - системы цифровой и аналоговой
+                  офисной телефонии Panasonic, Avaya, Сател, Cisco Systems,
+                  D-Link, Fluke, Allied Telesys, ZyXEL, Corega, Siemens;
+                </li>
+                <li>
+                  периферийное оборудование ASUS, Fujitsu, НР, Acer, LG, IBM,
+                  Canon, Samsung;
+                </li>
+                <li>
+                  копировально-множительную технику НР, Xerox, Canon, Ricoh,
+                  Kyocera, Konica, Riso, Epson;
+                </li>
+                <li>
+                  инженерные системы Xerox, Ricoh, Oce, KIP - плоттеры НР,
+                  Epson, Canon;
+                </li>
+                <li>
+                  системы отображения графической информации от ЖК и Плазменных
+                  мониторов любого размера до гостиничной и проекционной
+                  технологии и некоторых других специфических систем в
+                  зависимости от требований Заказчика.
+                </li>
+              </ul>
+            </li>
+            <li>
+              В качестве сопровождения уже имеющейся у Заказчика парка техники
+              мы предлагаем самую обширную номенклатуру оригинальных расходных
+              материалов и запасных частей ко всему парку существующего
+              серверного, активного сетевого оборудования, систем хранения
+              данных любого уровня сложности, печатающей техники, носителей
+              информации, компьютерных комплектующих со складов в Москве, Нижнем
+              Новгороде, Санкт-Петербурге и под заказ, что позволяет оперативно
+              реагировать на потребности наших клиентов и существенно снизить
+              сроки поставок продукции.
+            </li>
+            <li>
+              Сервис поставляемой и уже установленной у Заказчика техники.
+              <p class="about__description">
+                Наша компания обладает штатом квалифицированных инженеров,
+                способных в кратчайшие сроки оказать содействие в инсталляции,
+                техническом обслуживании и ремонте оборудования Заказчика.
+              </p>
+              <p class="about__description">
+                В своей ежедневной работе мы руководствуемся максимальным
+                удовлетворением комплексных потребностей наших Заказчиков, что
+                включает в себя гибкую ценовую политику, максимально сжатые
+                сроки поставок до склада клиента, лояльные условия оплаты
+                поставляемой продукции, поставку нестандартных решений под
+                конкретный проект.
+              </p>
+              <p class="about__description">
+                За время нашей работы нашими клиентами стали множество ведущих
+                предприятий и организаций Российской Федерации.
+              </p>
+            </li>
+          </ol>
+          <!-- <p class="about__description">
+            За время работы нашими клиентами стали такие известные предприятия и
+            структуры, как Волго-вятский банк Сбербанка России, ОАО РЖД,
+            Министерство обороны РФ, ОАО "Волганефтепродукт", ОАО "Торговый дом
+            "Красный якорь", Управление делами Губернатора Нижегородской
+            области, ООО "Волговятская строительная компания".
+          </p>
+          <p class="about__description">
+            Сотрудничая с нами, Вы создаете корпоративную информационную среду,
+            которая всегда будет соответствовать последним техническим решениям,
+            проверенным и отлаженным нашими специалистами.
+          </p>
+          <p class="about__description">
+            Компания «Грот НН» предлагает широкий спектр продукции мировых
+            брендов: Xerox, HP, Cisco, Fluke, APC и многих других. Все услуги
+            наших сервисных специалистов сертифицированы государственными
+            органами и компаниями-производителями.
+          </p>
+          <p class="about__description">
+            Мы достигли значительных успехов в развитии направления системной
+            интеграции, что позволяет предложить нашим клиентам такие услуги
+            как: создание сетей передачи данных, структурированных кабельных
+            систем, систем телефонной связи и других слаботочных сетей
+            (разрешение на данный вид работ подтверждается лицензией на
+            осуществление Строительства зданий и сооружений I и II уровней
+            ответственности).
+          </p>
+          <p class="about__description">
+            Компания «Грот НН» активно работает не только на территории
+            Нижегородской области, но и за ее пределами. Специализация на работе
+            с крупными корпоративными заказчиками и наличие сервисных центров в
+            таких городах, как Казань, Киров, Ижевск позволяет наиболее
+            оперативно реагировать на потребности наших клиентов.
+          </p>
+          <p class="about__description">
+            Наша компания готова осуществлять оптовые и мелкооптовые поставки
+            своей продукции по всей территории РФ любым видом транспорта. В
+            Нижнем Новгороде и области для наших клиентов действует система
+            бесплатной доставки.
+          </p> -->
         </div>
       </section>
-    </div>
-  </main>
 
-  <footer class="footer__container" id="footer">
-    <div class="footer">
-      <ul class="footer__list">
-        <li class="footer__item footer__item_contacts">
-          <h3 class="footer__title">Для вопросов и заявок</h3>
-          <a href="mailto:sales4@grotnn.ru" class="footer__data footer__data_mail">sales4@grotnn.ru</a>
-          <a href="tel:+78312159009" class="footer__data footer__data_tel">+7 831 215 90 09</a>
-        </li>
-        <li class="footer__item footer__item_locations">
-          <h3 class="footer__title">Мы ждём Вас по адресу</h3>
-          <a href="https://yandex.ru/maps/-/CCUs44DxhA" class="footer__data footer__data_locations_boston" target="_blank">Нижний Новгород, ул. Есенина, д.41</a>
-        </li>
-        <li class="footer__item footer__item_image"></li>
-      </ul>
-    </div>
-  </footer>
-</body>
+      <div class="services__container" id="services">
+        <section class="services">
+          <h3 class="services__title">Чем мы занимаемся</h3>
+          <div class="services__slider">
+            <button
+              class="services__slider_arrow services__slider_left-arrow"
+              type="button"
+            >
+              <svg
+                width="15"
+                height="9"
+                viewBox="0 0 14 6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M14 2V4H3V6L0 3L3 0V2H14Z" />
+              </svg>
+            </button>
+            <div class="services__slider_wrapper">
+              <ul class="services__slider_list"></ul>
+            </div>
+            <button
+              class="services__slider_arrow services__slider_right-arrow"
+              type="button"
+            >
+              <svg
+                width="15"
+                height="12"
+                viewBox="0 0 14 6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M14 2V4H3V6L0 3L3 0V2H14Z" />
+              </svg>
+            </button>
+          </div>
+          <!-- <a href="services.html" class="services__more_link">Get to know the rest</a> -->
+        </section>
+      </div>
+
+      <section class="vendors" id="vendors">
+        <h3 class="vendors__title">Наши партнеры</h3>
+        <ul class="vendors__list"></ul>
+      </section>
+
+      <div class="vacancies__container" id="vacancies">
+        <section class="vacancies">
+          <div class="vacancies__wrapper">
+            <h3 class="vacancies__title">Вакансии компании</h3>
+            <span class="vacancies__bank">Менеджер / Manager</span>
+            <a class="vacancies__bank_link">Зарплата сдельная</a>
+            <p class="vacancies__info">
+              Legal information and lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer__container" id="footer">
+      <div class="footer">
+        <ul class="footer__list">
+          <li class="footer__item footer__item_contacts">
+            <h3 class="footer__title">Для вопросов и заявок</h3>
+            <a
+              href="mailto:sales4@grotnn.ru"
+              class="footer__data footer__data_mail"
+              >sales4@grotnn.ru</a
+            >
+            <a href="tel:+78312159009" class="footer__data footer__data_tel"
+              >+7 831 215 90 09</a
+            >
+          </li>
+          <li class="footer__item footer__item_locations">
+            <h3 class="footer__title">Мы ждём Вас по адресу</h3>
+            <a
+              href="https://yandex.ru/maps/-/CCUs44DxhA"
+              class="footer__data footer__data_locations_boston"
+              target="_blank"
+              >Нижний Новгород, ул.&nbsp;Есенина, д.41</a
+            >
+          </li>
+          <li class="footer__item footer__item_image"></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

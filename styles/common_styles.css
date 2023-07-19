@@ -2,7 +2,7 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-  src: local('Arial'), local('ArialMT');
+  src: local("Arial"), local("ArialMT");
   src: url(../assets/fonts/arial\ regular.woff2) format("woff2");
   font-display: swap;
 }
@@ -11,7 +11,7 @@
   font-family: "Arial";
   font-style: italic;
   font-weight: 400;
-  src: local('Arial'), local('ArialMT');
+  src: local("Arial"), local("ArialMT");
   src: url(../assets/fonts/arial\ italic.woff2) format("woff2");
   font-display: swap;
 }
@@ -20,7 +20,7 @@
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  src: local('Georgia');
+  src: local("Georgia");
   src: url(../assets/fonts/georgia\ regular.woff2) format("woff2");
   font-display: swap;
 }
@@ -29,7 +29,7 @@
   font-family: "Georgia";
   font-style: normal;
   font-weight: 700;
-  src: local('Georgia');
+  src: local("Georgia");
   src: url(../assets/fonts/georgia\ bold.woff2) format("woff2");
   font-display: swap;
 }
@@ -53,6 +53,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #4c4c4c;
+  text-align: justify;
 
   background-color: #ffffff;
   overflow-x: hidden;
@@ -79,7 +80,7 @@ body {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .blackout {
@@ -151,7 +152,7 @@ body {
   display: flex;
   width: 900px;
 
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -213,7 +214,7 @@ body {
 
 .modal__item::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 4px;
   height: 4px;
   top: 7px;
@@ -233,43 +234,43 @@ body {
     top: -52px;
     right: 10px;
   }
-  
+
   .modal__container {
     width: 630px;
   }
-  
+
   .modal__image {
     width: 350px;
     height: 350px;
   }
-  
+
   .modal__content {
     padding: 10px;
   }
-  
+
   .modal__description {
     margin: 20px 0;
   }
-  
+
   .modal__item {
     margin-bottom: 5px;
-  }  
+  }
 }
 
 @media (max-width: 767px) {
   .modal {
     width: 271px;
-    left: calc( 50% + 15px );
+    left: calc(50% + 15px);
   }
 
   .modal__button {
     right: 0px;
   }
-  
+
   .modal__container {
     width: 240px;
   }
-  
+
   .modal__image {
     display: none;
   }
@@ -277,20 +278,20 @@ body {
   .modal__title {
     text-align: center;
   }
-  
+
   .modal__subtitle {
     display: block;
 
     text-align: center;
   }
-  
+
   .modal__description {
     margin-bottom: 24px;
 
     text-align: justify;
   }
-  
+
   .modal__item {
     margin-bottom: 5px;
-  }  
+  }
 }
