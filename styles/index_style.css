@@ -219,6 +219,10 @@
   text-indent: 32px;
 }
 
+.about__description_list {
+  padding: 0;
+}
+
 .about__description_list li {
   margin-top: 10px;
 }
