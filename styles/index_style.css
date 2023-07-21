@@ -69,6 +69,7 @@
 
 .header__navigation_list {
   display: flex;
+  align-items: center;
   height: 60px;
   list-style-type: none;
   margin: 0;
@@ -77,6 +78,7 @@
 
 .header__navigation_item {
   margin: 16px 0 18px;
+  max-width: 96px;
 }
 
 .header__navigation_item:not(:last-child) {
@@ -692,18 +694,12 @@
   background-position: 0 center;
 }
 
-.footer__data_locations_boston {
+.footer__data_location {
   padding: 33px 0;
   padding-left: 42px;
   line-height: 23px;
 
-  background-image: url(../assets/icons/pin.svg);
-  background-repeat: no-repeat;
-  background-position: 0 center;
-}
-
-.footer__data_locations_london {
-  padding-left: 42px;
+  text-align: left;
 
   background-image: url(../assets/icons/pin.svg);
   background-repeat: no-repeat;
@@ -924,11 +920,7 @@
     padding-left: 60px;
   }
 
-  .footer__data_locations_boston {
-    padding-left: 42px;
-  }
-
-  .footer__data_locations_london {
+  .footer__data_location {
     padding-left: 42px;
   }
 }
@@ -1005,7 +997,7 @@
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    align-items: center;
+    align-items: initial;
   }
 
   .header__navigation_item {
@@ -1021,7 +1013,7 @@
     padding-bottom: 7px;
 
     font-size: 32px;
-    line-height: 160%;
+    line-height: 120%;
   }
 
   /* --------------- */
@@ -1251,7 +1243,7 @@
     margin: 0 auto;
   }
 
-  .footer__data_locations_boston {
+  .footer__data_location {
     padding: 40px 0;
     padding-left: 42px;
   }
