@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/common_styles.css" />
     <link rel="stylesheet" href="./styles/index_style.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
     <script src="./scripts/burger.js" defer></script>
-    <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/slider_new.js" defer></script>
     <script src="./scripts/vendors.js" defer></script>
   </head>
   <body class="open">
@@ -21,7 +22,7 @@
         <a class="logo">
           <span class="logo__item logo__item_title">ООО Грот НН</span>
           <span class="logo__item logo__item_description"
-            >Мы за комплексный подход</span
+            >Комплексный подход<br />к системной интеграции</span
           >
         </a>
         <button class="burger-btn" type="button" id="burger"></button>
@@ -61,7 +62,7 @@
     </div>
 
     <main>
-      <section class="start-screen">
+      <!-- <section class="start-screen">
         <div class="start-screen__wrapper">
           <div class="start-screen__container">
             <h2 class="start-screen__title">
@@ -78,7 +79,7 @@
           </div>
         </div>
       </section>
-
+ -->
       <section class="about" id="about">
         <div class="about__container">
           <h3 class="about__title">О нашей компании</h3>
@@ -227,46 +228,6 @@
               </p>
             </li>
           </ol>
-          <!-- <p class="about__description">
-            За время работы нашими клиентами стали такие известные предприятия и
-            структуры, как Волго-вятский банк Сбербанка России, ОАО РЖД,
-            Министерство обороны РФ, ОАО "Волганефтепродукт", ОАО "Торговый дом
-            "Красный якорь", Управление делами Губернатора Нижегородской
-            области, ООО "Волговятская строительная компания".
-          </p>
-          <p class="about__description">
-            Сотрудничая с нами, Вы создаете корпоративную информационную среду,
-            которая всегда будет соответствовать последним техническим решениям,
-            проверенным и отлаженным нашими специалистами.
-          </p>
-          <p class="about__description">
-            Компания «Грот НН» предлагает широкий спектр продукции мировых
-            брендов: Xerox, HP, Cisco, Fluke, APC и многих других. Все услуги
-            наших сервисных специалистов сертифицированы государственными
-            органами и компаниями-производителями.
-          </p>
-          <p class="about__description">
-            Мы достигли значительных успехов в развитии направления системной
-            интеграции, что позволяет предложить нашим клиентам такие услуги
-            как: создание сетей передачи данных, структурированных кабельных
-            систем, систем телефонной связи и других слаботочных сетей
-            (разрешение на данный вид работ подтверждается лицензией на
-            осуществление Строительства зданий и сооружений I и II уровней
-            ответственности).
-          </p>
-          <p class="about__description">
-            Компания «Грот НН» активно работает не только на территории
-            Нижегородской области, но и за ее пределами. Специализация на работе
-            с крупными корпоративными заказчиками и наличие сервисных центров в
-            таких городах, как Казань, Киров, Ижевск позволяет наиболее
-            оперативно реагировать на потребности наших клиентов.
-          </p>
-          <p class="about__description">
-            Наша компания готова осуществлять оптовые и мелкооптовые поставки
-            своей продукции по всей территории РФ любым видом транспорта. В
-            Нижнем Новгороде и области для наших клиентов действует система
-            бесплатной доставки.
-          </p> -->
         </div>
       </section>
 
@@ -287,9 +248,131 @@
                 <path d="M14 2V4H3V6L0 3L3 0V2H14Z" />
               </svg>
             </button>
+
             <div class="services__slider_wrapper">
-              <ul class="services__slider_list"></ul>
+              <ul class="services__slider_list">
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/copier.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Копировальные аппараты и МФУ
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/data_storage_system.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Сиситемы хранения данных различных классов
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="background-image: url('./assets/images/slider/ip.jpg')"
+                >
+                  <h4 class="services__slider_image-text">
+                    Системы офисной IP-телефонии
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/mfu.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Печатающая техника всех известных вендоров
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/notebook.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Реестровые ноутбуки и рабочие станции
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/router.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Маршрутизаторы (включая тяжелые решения уровня предприятия)
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/security.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Оборудование систем безопасности предприятия
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/server.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Серверное оборудование любой сложности
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/service.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Сервис и сборка вычислительных систем
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/ups.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Системы Бесперебойного Питания (включая 3-фазное исполнение)
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/video_wall.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Видеостены, мультимедийное и видеопрезентационное
+                    оборудование
+                  </h4>
+                </li>
+                <li
+                  class="services__slider_image"
+                  style="
+                    background-image: url('./assets/images/slider/wardrobe.jpg');
+                  "
+                >
+                  <h4 class="services__slider_image-text">
+                    Серверные шкафы и стойки 19’’
+                  </h4>
+                </li>
+              </ul>
             </div>
+
             <button
               class="services__slider_arrow services__slider_right-arrow"
               type="button"
@@ -304,7 +387,6 @@
               </svg>
             </button>
           </div>
-          <!-- <a href="services.html" class="services__more_link">Get to know the rest</a> -->
         </section>
       </div>
 

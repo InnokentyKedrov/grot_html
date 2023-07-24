@@ -1,0 +1,150 @@
+.services__container {
+  width: 100%;
+  scroll-margin-top: 180px;
+}
+
+.services {
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.services__title {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0.06em;
+
+  text-align: center;
+}
+
+.services__slider {
+  width: 100%;
+
+  height: 375px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__slider_wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 910px;
+  height: 100%;
+}
+
+.services__slider_list {
+  display: flex;
+  gap: 50px;
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  list-style-type: none;
+  top: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.services__slider_image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 375px;
+  width: 270px;
+}
+
+.services__slider_image-text {
+  text-align: center;
+}
+
+.services__slider_arrow {
+  width: 52px;
+  height: 52px;
+  margin: auto 0;
+  padding: 0;
+
+  border: 2px solid #f1cdb3;
+  border-radius: 50%;
+  fill: #292929;
+  background-color: #f6f6f6;
+
+  cursor: pointer;
+}
+
+.services__slider_arrow:hover {
+  border-color: #fddcc4;
+  background-color: #fddcc4;
+}
+
+.services__slider_arrow:disabled {
+  border-color: #cdcdcd;
+  fill: #cdcdcd;
+}
+
+.services__slider_left-arrow {
+  margin-left: 40px;
+}
+
+.services__slider_right-arrow {
+  margin-right: 40px;
+
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1279px) {
+  .services__container {
+    scroll-margin-top: 120px;
+  }
+
+  .services {
+    width: 768px;
+  }
+
+  .services__slider_left-arrow {
+    margin-left: 30px;
+  }
+
+  .services__slider_right-arrow {
+    margin-right: 30px;
+  }
+
+  .services__slider_wrapper {
+    width: 580px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    width: 320px;
+    padding-bottom: 100px;
+  }
+
+  .services__title {
+    width: 300px;
+    margin: 0 auto;
+    padding: 42px 0 0;
+
+    text-align: center;
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .services__slider {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .services__slider_wrapper {
+    width: 270px;
+    order: -1;
+  }
+
+  .services__slider_arrow {
+    margin: 0;
+  }
+}
