@@ -3,9 +3,16 @@ const rightBtn = document.querySelector(".services__slider_right-arrow");
 // const text = document.querySelector(".services__slider__text");
 const container = document.querySelector(".services__slider");
 const mainSlide = document.querySelector(".services__slider_list");
-const slidesCount = mainSlide.querySelectorAll(
-  ".services__slider_image"
-).length;
+let slidesCount = mainSlide.querySelectorAll(".services__slider_image").length;
+
+if (document.documentElement.clientWidth > 1279) {
+  slidesCount /= 3;
+} else if (
+  document.documentElement.clientWidth > 767 &&
+  document.documentElement.clientWidth < 1280
+) {
+  slidesCount /= 2;
+}
 
 let activeSlideIndex = 0;
 
@@ -34,6 +41,17 @@ const changeSlide = (direction) => {
 
   const width = 320;
 
-  mainSlide.style.transform = `translateX(-${activeSlideIndex * width}px)`;
+  if (document.documentElement.clientWidth > 1279) {
+    mainSlide.style.transform = `translateX(-${
+      activeSlideIndex * width * 3
+    }px)`;
+  } else if (document.documentElement.clientWidth < 767) {
+    mainSlide.style.transform = `translateX(-${activeSlideIndex * width}px)`;
+  } else {
+    mainSlide.style.transform = `translateX(-${
+      activeSlideIndex * width * 2
+    }px)`;
+  }
+
   // text.style.transform = `translateY(${activeSlideIndex * width}px)`;
 };
