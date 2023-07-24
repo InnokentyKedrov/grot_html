@@ -104,85 +104,6 @@
   transition: 0.3s;
 }
 
-/* -----START-SCREEN----- */
-
-/* .start-screen {
-  background-image: url("../assets/images/office2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 180px;
-}
-
-.start-screen__wrapper {
-  width: 1280px;
-  margin: 0 auto;
-}
-
-.start-screen__container {
-  display: flex;
-  flex-direction: column;
-  gap: 42px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 64px 0 100px;
-}
-
-.start-screen__title {
-  width: 330px;
-  margin: 0;
-
-  font-family: "Georgia", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 56px;
-
-  color: #000000;
-}
-
-.start-screen__description {
-  margin: 0;
-
-  font-size: 17px;
-  line-height: 22px;
-  text-indent: 31px;
-  text-align: justify;
-
-  color: #000000;
-}
-
-.start-screen_link {
-  display: block;
-  box-sizing: border-box;
-  text-align: center;
-  align-self: flex-end;
-
-  width: 207px;
-  height: 52px;
-  padding: 15px 44px;
-
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 22.1px;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-
-  background-color: #f1cdb3;
-  color: #292929;
-  border-radius: 100px;
-}
-
-.start-screen_link:hover {
-  background-color: #fddcc4;
-}
-
-.start-screen__image {
-  width: 698px;
-  height: 728px;
-} */
-
 /* -----ABOUT----- */
 
 .about {
@@ -190,10 +111,6 @@
   margin: 180px auto 0;
   padding-top: 64px;
   scroll-margin-top: 180px;
-
-  /* background-image: url(../assets/images/diagram.png);
-  background-repeat: no-repeat;
-  background-position: 100px; */
 }
 
 .about__container {
@@ -203,8 +120,6 @@
   gap: 25px;
   margin: 0 auto;
   padding-top: 14px;
-  /* padding-left: 634px;
-  width: 600px; */
 }
 
 .about__title {
@@ -242,7 +157,6 @@
 }
 
 .vendors__title {
-  width: 310px;
   margin: 0 auto;
   margin-bottom: 60px;
 
@@ -286,35 +200,56 @@
   width: 120px;
 }
 
-/* .vendors__item_title {
-  display: block;
-  box-sizing: border-box;
-  height: 113px;
-  padding-top: 90px;
-  width: 120px;
-  min-width: 60px;
+/* -----SERTIFICATES----- */
 
-  font-family: 'Georgia', serif;
+.sertificates {
+  width: 100%;
+  margin: 0 auto 100px;
+  padding-top: 80px;
+  scroll-margin-top: 180px;
+}
+
+.sertificates__title {
+  margin: 0;
+  margin-bottom: 64px;
+
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 35px;
+  line-height: 45.5px;
   letter-spacing: 0.06em;
   text-align: center;
+}
+
+.sertificates__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.sertificates__item {
+  display: block;
+  box-sizing: border-box;
+  width: 500px;
+  height: 700px;
+  min-width: 270px;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  color: #545454;
-} */
+}
 
 /* -----VACANCIES----- */
 
 .vacancies__container {
   width: 100%;
   scroll-margin-top: 180px;
-
-  background-color: #f6f6f6;
 }
 
 .vacancies {
@@ -510,46 +445,10 @@
 
   /* --------------- */
 
-  /* .start-screen {
-    margin-top: 120px;
-  }
-
-  .start-screen__wrapper {
-    width: 768px;
-  }
-
-  .start-screen__container {
-    padding: 0;
-  }
-
-  .start-screen__title {
-    padding-top: 30px;
-
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .start-screen_link {
-    margin: 0 auto;
-    margin-bottom: 100px;
-  }
-
-  .start-screen__image {
-    align-self: flex-end;
-
-    width: 569px;
-    height: 593px;
-  } */
-
-  /* --------------- */
-
   .about {
     width: 768px;
     padding-top: 42px;
-    /* padding-bottom: 290px; */
     scroll-margin-top: 120px;
-
-    /* background-position: bottom center; */
   }
 
   .about__container {
@@ -752,38 +651,6 @@
 
   /* --------------- */
 
-  /* .start-screen__wrapper {
-    width: 320px;
-  }
-
-  .start-screen__container {
-    gap: 10px;
-  }
-
-  .start-screen__title {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 30px;
-
-    text-align: center;
-    font-size: 25px;
-    line-height: 32px;
-    letter-spacing: 0.06em;
-  }
-
-  .start-screen_link {
-    margin-bottom: 105px;
-  }
-
-  .start-screen__image {
-    width: 260px;
-    height: 272px;
-    margin-right: 10px;
-  } */
-
-  /* --------------- */
-
   .about {
     width: 320px;
     padding-top: 32px;
@@ -808,14 +675,15 @@
     margin-bottom: 42px;
   }
 
-  /* .vendors__item_title {
-    height: 87px;
-    padding-top: 70px;
-    min-width: 50px;
-  
-    font-size: 15px;
-    line-height: 17px;
-  } */
+  /* --------------- */
+
+  .sertificates__list {
+    gap: 20px;
+  }
+
+  .sertificates__item {
+    height: 500px;
+  }
 
   /* --------------- */
 
