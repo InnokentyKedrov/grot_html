@@ -47,7 +47,7 @@
 }
 
 .logo__item_description {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -326,7 +326,7 @@
 .vacancies__info {
   margin: 0;
 
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
@@ -396,6 +396,9 @@
 }
 
 .footer__data {
+  padding: 10px 0;
+  padding-left: 60px;
+
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -405,35 +408,27 @@
   text-decoration: none;
 
   color: #f1cdb3;
+
+  background-repeat: no-repeat;
+  background-position: 0 center;
 }
 
 .footer__data_mail {
-  padding: 40px 0;
-  padding-left: 60px;
-
   background-image: url(../assets/icons/icon-email.svg);
-  background-repeat: no-repeat;
-  background-position: 0 center;
 }
 
 .footer__data_tel {
-  padding-left: 60px;
-
   background-image: url(../assets/icons/icon-phone.svg);
-  background-repeat: no-repeat;
-  background-position: 0 center;
 }
 
 .footer__data_location {
-  padding: 33px 0;
+  padding: 20px 0;
   padding-left: 42px;
   line-height: 23px;
 
   text-align: left;
 
   background-image: url(../assets/icons/pin.svg);
-  background-repeat: no-repeat;
-  background-position: 0 center;
 }
 
 @media (max-width: 1279px) {
@@ -549,18 +544,6 @@
   .footer__item_locations {
     width: 302px;
     margin-bottom: 65px;
-  }
-
-  .footer__data_mail {
-    padding-left: 60px;
-  }
-
-  .footer__data_tel {
-    padding-left: 60px;
-  }
-
-  .footer__data_location {
-    padding-left: 42px;
   }
 }
 
@@ -794,10 +777,5 @@
   .footer__data_tel {
     width: 180px;
     margin: 0 auto;
-  }
-
-  .footer__data_location {
-    padding: 40px 0;
-    padding-left: 42px;
   }
 }
