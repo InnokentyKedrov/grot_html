@@ -2,8 +2,10 @@ const leftBtn = document.querySelector(".services__slider_left-arrow");
 const rightBtn = document.querySelector(".services__slider_right-arrow");
 // const text = document.querySelector(".services__slider__text");
 const container = document.querySelector(".services__slider");
-const mainSlide = document.querySelector(".services__slider_list");
-let slidesCount = mainSlide.querySelectorAll(".services__slider_image").length;
+const mainSlide = document.querySelector(".services__slider_image-list");
+let slidesCount = mainSlide.querySelectorAll(
+  ".services__slider_image-item"
+).length;
 
 if (document.documentElement.clientWidth > 1279) {
   slidesCount /= 3;
